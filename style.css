@@ -1,6 +1,8 @@
 /* Color Pallete
   Background = #004643
-
+  Headline = #fffffe
+  Highlight = #f9bc60
+  Stroke = #001e1d
 */
 
 
@@ -12,5 +14,59 @@
 }
 
 body{
-  background-color: #004643;
+  background-color: #001e1d;
+}
+
+main{
+  padding: 24px 16px 24px 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-family: 'montserrat';
+  font-size: 3rem;
+  color: #fffffe;
+  margin-bottom: 20px;
+}
+
+.title-span{
+  color: #f9bc60;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.form-container, .list-container{
+  background-color: #004643; 
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 12px 8px 12px 8px;
+  min-height: 60vh;
+  min-width: 60vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 12px 8px 12px 8px;
+  min-height: 60vh;
+  min-width: 90vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
 }
