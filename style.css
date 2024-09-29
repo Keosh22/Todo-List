@@ -69,7 +69,7 @@ main{
 }
 
 /* Form section */
-.input-form{
+.input-form, textarea{
   padding: 16px 16px;
   border-radius: 25px;
   border: 0;
@@ -78,7 +78,7 @@ main{
   outline: none;
 }
 
-input[type=text], input[type=date]{
+input[type=text], input[type=date], textarea{
   font-size: 1rem;
   font-family: 'montserrat';
   color: #001e1d;
@@ -123,7 +123,7 @@ label{
   align-items: start;
   padding: 30px 35px;
   height: 475px;
-  width: 100vh;
+  min-width: 100vh;
   border-radius: 25px;
   box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
   overflow: scroll;
@@ -135,6 +135,7 @@ label{
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
+  min-width: 100%;
   background-color: #abd1c6;
   padding: 24px 16px;
   border: 0;
@@ -143,8 +144,10 @@ label{
 }
 
 .card-body{
-  max-width: 100%;
+
 }
+
+
 
 .card-action{
   display: flex;
