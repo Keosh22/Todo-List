@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List</title>
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-   <main>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
       <h1 class="title">My <span class="title-span">Todo</span> List</h1>
       <div class="container">
         <!-- Left -->
-         <section class="form-container">
-            <div class="input-container">
-              <label class="" for="todo">Todo</label>
-              <input type="text" id="todo" class="input-form" placeholder="Add new todo">
-            </div>
-            <div class="input-container">
-              <label for="description">Description</label>
-              <input type="text" id="description" class="input-form" placeholder="Add description">
-            </div>
-            <div class="input-container">
-              <label class="" for="date">Date</label>
-              <input type="date" id="date" class="input-form" placeholder="Add new todo">
-            </div>
-            <button id="add-btn">Add</button>
-         </section>
+        <section class="form-container">
+          <div class="input-container">
+            <label class="" for="todo">Todo</label>
+            <input
+              type="text"
+              id="todo"
+              class="input-form"
+              placeholder="Add new todo"
+            />
+          </div>
+          <div class="input-container">
+            <label for="description">Description</label>
+            <input
+              type="text"
+              id="description"
+              class="input-form"
+              placeholder="Add description"
+            />
+          </div>
+          <div class="input-container">
+            <label class="" for="date">Date</label>
+            <input
+              type="date"
+              id="date"
+              class="input-form"
+              placeholder="Add new todo"
+            />
+          </div>
+          <button id="add-btn">Add</button>
+        </section>
         <!-- Right -->
-         <section class="list-container">
-
-         </section>
-
+        <section class="list-container">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="">Title</h3>
+              <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis inventore, totam repellendus illo dolores culpa, alias quibusdam repudiandae commodi voluptatibus esse delectus nam illum quidem, repellat placeat et molestiae? </p>
+              <p class="card-date">Date</p>
+            </div>
+            <div class="card-action">
+              <button class="card-btn"><img class="card-btn-img" src="assets/pencil_drawing_480px.png" alt="pencil"></button>
+              <button class="card-btn"><img class="card-btn-img" src="assets/trash_480px.png" alt="trash"></button>
+            </div>
+          </div>
+        </section>
       </div>
-   </main>
-</body>
+    </main>
+  </body>
 </html>

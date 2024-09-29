@@ -59,17 +59,6 @@ main{
   box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
 }
 
-.list-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  padding: 12px 8px 12px 8px;
-  min-height: 60vh;
-  min-width: 90vh;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
-}
 
 .input-container{
   display: flex;
@@ -79,6 +68,7 @@ main{
   width: 100%;
 }
 
+/* Form section */
 .input-form{
   padding: 16px 16px;
   border-radius: 25px;
@@ -103,7 +93,7 @@ label{
   margin-bottom: 5px;
 }
 
-button{
+#add-btn{
   min-width: 150px;
   padding: 16px 16px;
   font-family: 'montserrat';
@@ -117,7 +107,85 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+ #add-btn:hover{
   background-color: #e16162;
   transition: 0.15s ease-in-out;
 }
+
+
+
+/* List Section */
+.list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  align-items: start;
+  padding: 30px 35px;
+  height: 475px;
+  width: 100vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 5px rgba(0,0,0, 0.1), 0 4px 20px 5px rgba(0,0,0, 0.1);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: #abd1c6;
+  padding: 24px 16px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.3);
+}
+
+.card-body{
+  max-width: 100%;
+}
+
+.card-action{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card-btn{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card-btn-img{
+  height: 25px;
+  width: 25px;
+}
+
+.card-btn-img:hover{
+  overflow: hidden;
+  height: 28px;
+  width: 28px;
+  transition: 0.15s ease-in-out;
+}
+
+.card-description,
+.card-date
+{
+  font-family: 'palanquin';
+  font-weight: 400;
+  color: #004643;
+  font-size: 1rem;
+}
+
+h3{
+  font-family: 'montserrat';
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #001e1d;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
