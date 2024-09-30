@@ -3,6 +3,7 @@
   Headline = #fffffe
   Highlight = #f9bc60
   Stroke = #001e1d
+  Tertiary = #e16162
 */
 
 
@@ -93,7 +94,9 @@ label{
   margin-bottom: 5px;
 }
 
-#add-btn{
+#add-btn,
+#update-btn
+{
   min-width: 150px;
   padding: 16px 16px;
   font-family: 'montserrat';
@@ -107,9 +110,17 @@ label{
   cursor: pointer;
 }
 
- #add-btn:hover{
+ #add-btn:hover,
+ #update-btn:hover
+ {
   background-color: #e16162;
   transition: 0.15s ease-in-out;
+}
+
+#update-btn:disabled,
+#add-btn:disabled
+{
+  background-color: gray;
 }
 
 
@@ -192,3 +203,12 @@ h3{
   margin-bottom: 5px;
 }
 
+#error-container{
+  margin-top: 20px;
+}
+
+.error-text{
+  font-family: 'montserrat';
+  font-weight: 600;
+  color: #e16162;
+}

@@ -39,13 +39,12 @@
           </div>
           <div class="input-container">
             <label for="description">Description</label>
-            <!-- <input
-              type="text"
+            <textarea
               id="description"
-              class="input-form"
+              rows="2"
+              maxlength="80"
               placeholder="Add description"
-            /> -->
-            <textarea  id="description" rows="2" maxlength="80"></textarea>
+            ></textarea>
           </div>
           <div class="input-container">
             <label class="" for="date">Date</label>
@@ -56,21 +55,19 @@
               placeholder="Add new todo"
             />
           </div>
-          <button id="add-btn">Add</button>
+          <div>
+            <button id="add-btn">Add</button>
+            <button id="update-btn" disabled>Update</button>
+          </div>
+
+          <div id="error-container">
+           
+          </div>
         </section>
+
         <!-- Right -->
         <section id="TodoList" class="list-container">
-          <!-- <div class="card">
-            <div class="card-body">
-              <h3 class="">Title</h3>
-              <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis inventore, totam repellendus illo dolores culpa, alias quibusdam repudiandae commodi voluptatibus esse delectus nam illum quidem, repellat placeat et molestiae? </p>
-              <p class="card-date">Date</p>
-            </div>
-            <div class="card-action">
-              <button class="card-btn"><img class="card-btn-img" src="assets/pencil_drawing_480px.png" alt="pencil"></button>
-              <button class="card-btn"><img class="card-btn-img" src="assets/trash_480px.png" alt="trash"></button>
-            </div>
-          </div> -->
+          <!-- Card content -->
         </section>
       </div>
     </main>
